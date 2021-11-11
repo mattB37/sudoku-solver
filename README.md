@@ -1,6 +1,12 @@
 # sudoku-solver
 
-This is a basic sudoku solver program that solves 9x9 sudoku boards. 
+How do I use this sudoku solver on my machine?
+  - To use the program, install the package and install the required libraries from the requirements.txt file
+  - Simply run the main.py file and this will open up the gui where you can input a puzzle, solve a puzzle, or generate a random unsolved puzzle
 
-Random unsolved puzzles are pulled from https://menneske.no/sudoku/eng/ using the Python 3 webscraping library BeautifulSoup. 
-The solver uses a brute force depth-first-search that visits every empty cell, filling in digits and backtracking whenever a number is found to be invalid.
+How does the Solver solve puzzles?
+  - The solver visits every empty cell, filling in digits and backtracking whenever a number is found to be invalid
+  - It can solve almost every puzzle in under 1 second
+
+Random unsolved puzzles are scraped from https://menneske.no/sudoku/eng/ using the Python 3 webscraping library BeautifulSoup. 
+
