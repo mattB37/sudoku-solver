@@ -6,7 +6,7 @@ How do I use this sudoku solver on my machine?
   - To use the program, install the package and install the required libraries from the requirements.txt file
   - Simply run the main.py file and this will open up the gui where you can input a puzzle, solve a puzzle, or generate a random unsolved puzzle
 
-![](assets/images/GUI.png)
+<img src="assets/images/GUI.png" width="200">
 
 How does the program solve puzzles?
   - The solver visits every empty cell in the 2d matrix which represents the sudoku board, filling in digits and backtracking whenever a number is found to be invalid
