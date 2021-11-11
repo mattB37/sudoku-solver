@@ -8,7 +8,7 @@ class SudokuSolver:
         """
         Solves a sudoku puzzle using a backtracking algorithm
         """
-        self.solve(0, 0)
+        self.solve(row=0, col=0)
 
     def solve(self, row, col):
         """
