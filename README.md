@@ -10,7 +10,7 @@ How does the program solve puzzles?
   - The solver visits every empty cell in the 2d matrix which represents the sudoku board, filling in digits and backtracking whenever a number is found to be invalid
 
 What library did you use to make the GUI?
-  - The gui was made using the Python 3 library tkinter
+  - The gui was made using the tkinter libray in Python 3
 
 How do you get random unsolved puzzles?
   - Random unsolved puzzles are scraped from https://menneske.no/sudoku/eng/ using the Python 3 webscraping library BeautifulSoup. 
