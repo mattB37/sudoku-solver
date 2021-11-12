@@ -18,4 +18,3 @@ How do you get random unsolved puzzles?
 What does the GUI look like?
 
 ![](assets/images/GUI.png)
-
