@@ -5,18 +5,18 @@ import time
 
 def scrapePuzzle():
     """Returns a list of strings that represent an unsolved 9x9 sudoku puzzle"""
-    page = requests.get('https://menneske.no/sudoku/eng/').text
-    soup = BeautifulSoup(page, 'lxml')
+    page = requests.get("https://menneske.no/sudoku/eng/").text
+    soup = BeautifulSoup(page, "lxml")
     puzzle = []
-    rows = soup.find_all('tr', {'class': 'grid'})
+    rows = soup.find_all("tr", {"class": "grid"})
     for row in rows:
-        cols = row.find_all('td')
+        cols = row.find_all("td")
         for col in cols:
             txt = col.text
-            if txt != '\xa0':
+            if txt != "\xa0":
                 puzzle.append(txt)
             else:
-                puzzle.append('.')
+                puzzle.append(".")
     return puzzle
 
 
@@ -25,7 +25,7 @@ def formatSudokuPuzzle(puzzle: str):
     sudokuBoard = []
     n = 9
     for i in range(0, len(puzzle), n):
-        sudokuBoard.append(list(puzzle[i:i+n]))
+        sudokuBoard.append(list(puzzle[i : i + n]))
     return sudokuBoard
 
 
